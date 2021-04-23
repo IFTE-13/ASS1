@@ -6,41 +6,53 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <title>Welcome</title>
 </head>
 <body>
-    <section class="bottom">
-        <div class="top-side">
-         <h6><a target="_blank" href="https://web.facebook.com/mohammed.iftekhar.14811/">About</a></h6>
-        </div>
-        <div class="top-side">
-         <h6><a target="_blank" href="https://www.linkedin.com/">Work</a></h6>
-        </div>
-        <div class="top-side">
-        <h6><a target="_blank" href="https://www.linkedin.com/in/mohammed-iftekhar-ba8bb4202/"></a>Portfolio</h6>
-    </div>
-        <div class="top-side">
-        <h6><a target="_blank" href="https://mail.google.com">Contact</a></h6>
-    </div>
-  </section>
+    <header class="d-flex flex-row-reverse">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Blogs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">About</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
 
-  <section class ="top">
-    <div class="half-width"> 
+  <section class ="d-flex justify-content-center mt-5 container p-2">
+    <div> 
         <h1>Hello I'm</h1>
         <h1><span class="hl">IFTEKHAR</span></h1>
         <p>Hi! I'm a baby web develper. Trying and working hard to become a professional web develpoer. </p>
         <a class="link-button" target="_blank" href="https://www.linkedin.com/in/mohammed-iftekhar-ba8bb4202/">Check me!</a>
     </div>
-    <div class="half-width">
+    <div>
         <img src="1.png" alt="">
     </div>
     </section>
 
-    <section class="bio">
-        <div class="half-width">
+    <section class ="d-flex justify-content-center mt-5 container p-2">
+        <div>
             <img src="2.png" alt="">
         </div>
-        <div class="half-width">
+        <div>
             <h3>Biography</h3>
             <p>I needed a job so badly. I in any sector i didn't had any experience. So, I worked hard and learnt and the basic and expert level web development in order to gain experience.</p>
             <a class="link-button" target="_blank" href="https://www.facebook.com/mohammed.iftekhar.14811">CV !</a>
@@ -48,24 +60,39 @@
     </section>
 
 
-    <section class="bottom">
-        <h2><span class="h2">Latest</span> Working Project</h2>
-        <div class="half-width1">
-            <img src="image 4.png" alt="">
-            <p><h2>Power X-Gym(Gym website)</h2>Web development is fun. Let's learn web development.</p>
-        </div>
-        <div class="half-width1">
-            <img src="image 5.png" alt="">
-            <p><h2>Creative agency</h2>Creativity is an unique thing. Let's try something new.</p>
-        </div>
-        <div class="half-width1">
-            <img src="image 8.png" alt="">
-            <p><h2>Hard Rock Music</h2>Music is fun. Music is love.</p>
+    <section>
+        <h2 class="text-center mb-3"><span class="h2">Latest</span> Working Project</h2>
+        <div class="d-flex justify-content-around">
+            <div class="card" style="width: 18rem;">
+                <img src="image 4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Power X-Gym</h5>
+                  <p class="card-text">(Gym website) <br> <hr> Web development is fun. Let's learn web development.</p>
+                  <a href="#" class="btn btn-primary">Learn more</a>
+                </div>
+              </div>
+            <div class="card" style="width: 18rem;">
+                <img src="image 5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Creative agency</h5>
+                  <p class="card-text">(Creative website) <br> <hr>Creativity is an unique thing. Let's try something new.</p>
+                  <a href="#" class="btn btn-primary">Learn more</a>
+                </div>
+              </div>
+            <div class="card" style="width: 18rem;">
+                <img src="image 8.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Hard Rock Music</h5>
+                  <p class="card-text">(Music website) <br> <hr>Music is an unique thing. Let's try something new.</p>
+                  <a href="#" class="btn btn-primary">Learn more</a>
+                </div>
+              </div>
         </div>
         
     </section>
-    <section class = "ex">
-        
+
+
+    <section class = "mt-5">
         <div id="full"class="half-width single-ex">
             <h2>Know more about my journey</h2>
             <h3 class="name-highlight">How I become an web developer</h3>
@@ -79,22 +106,24 @@
             <a class="link-button" target="_blank" href="web.programming-hero.com">Read more</a>
         </div>
     </section>
-
-    <section class="last">
-        <div class="ll"><span class="work">Work Inquiry</span><a class="link-button" target="_blank" href="https://www.facebook.com/mohammed.iftekhar.14811">Start Chat!</a>
+    <div class="container mb-3">
+        <div class="d-flex justify-content-center align-items-center back">
+            <div><span class="work">Work Inquiry</span></div>
+            <div><a class="link-button" target="_blank" href="https://www.facebook.com/mohammed.iftekhar.14811">Start Chat!</a></div>
         </div>
+    </div>
 
-        <footer>
-            <h4>Stay Connected</h4>
-            <h2>ifte.phoenix@gmail.com</h2>
-            <div class="ic"></div>
-            <div class="icon"><img src="image 6.png" alt=""></div>
-            <div class="icon"><img src="Group 33059.png" alt=""></div>
-            <div class="icon"><img src="image 7.png" alt=""></div>
+    <footer class="container mt-5">
+        <h4 class="text-center">Stay Connected</h4>
+        <h2 class="text-center">ifte.phoenix@gmail.com</h2>
+        <div class="d-flex justify-content-center">
+        <div class="icon"><img src="image 6.png" alt=""></div>
+        <div class="icon"><img src="Group 33059.png" alt=""></div>
+        <div class="icon"><img src="image 7.png" alt=""></div>
         </div>
-        </footer>
-    
-    </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
 </body>
 </html>
